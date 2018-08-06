@@ -1,0 +1,41 @@
+<!--****************************************************************#
+#																	#
+# Author: Ellis Sanjay Tarmaster									#
+# Date: 06/08/2018													#
+#																	#
+#*****************************************************************-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Technical Task</title>
+		<link rel="shortcut icon" type="image/png" href="../static/search_icon.png"/>
+
+
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/myStyle.css') }}">
+
+	</head>
+	<body style="background-image: url('../static/search_icon.png');">
+
+		<form class="animate" action="/index" method="POST" style="background-color: #FFFFFF; border-radius: 20px; border: 2px solid black;">
+
+			<div class="imgcontainer">
+				<img src="../static/src/avatar.png" width="250px" height="250px" alt="Avatar">
+			</div>
+
+			<div class="container">
+
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" autofocus="autofocus" required="required">
+
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required="required">
+
+				<button type="submit">Login</button>
+
+			</div>
+
+		</form>
+
+	</body>
+</html>
